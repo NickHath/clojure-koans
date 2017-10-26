@@ -14,6 +14,7 @@
 (defmethod diet :carnivore [a] (str (:name a) " eats animals."))
 (defmethod diet :default [a] (str "I don't know what " (:name a) " eats."))
 
+
 (meditations
   "Some functions can be used in different ways - with no arguments"
   (= "Hello World!" (hello))
