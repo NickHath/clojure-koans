@@ -39,4 +39,4 @@
           (ref-set the-world {})
           (alter the-world assoc :jerry "Real Jerry")
           (alter bizarro-world assoc :jerry "Bizarro Jerry")
-          (vec (get the-world :jerry) (get bizarro-world :jerry))))))
+          [(:jerry @the-world) (:jerry @bizarro-world)]))))
